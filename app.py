@@ -5,7 +5,7 @@ import pandas as pd
 
 app = flask.Flask(__name__, template_folder='templates')
 
-with open('../Flasking/bike_model_xgboost.pkl', 'rb') as f:
+with open('bike_model_xgboost.pkl', 'rb') as f:
     model = pickle.load(f)
 
 app = flask.Flask(__name__, template_folder='templates')
